@@ -1,0 +1,6 @@
+numpy
+--find-links https://download.pytorch.org/whl/torch_stable.html
+torch
+scikit-learn
+pandas
+tqdm
