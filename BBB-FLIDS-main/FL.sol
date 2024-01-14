@@ -3,7 +3,7 @@ pragma solidity ^0.8.0;
 contract FederatedLearningContract {
 	// Owner address of this contract
 	// Owner will act as the "server" for federated learning
-	// Others will send their updates via events, the ownder will average them to update the model
+	// Others will send their updates via events, the owner will average them to update the model
 	address public owner;
 
 	// Enum representing current stage of the federated learning model
