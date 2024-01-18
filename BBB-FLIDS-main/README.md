@@ -1,4 +1,4 @@
-# BB
+# B
 
 This repository contains BBB-FLIDS, Basic Blockchain-Based Federated Learning Intrusion Detection System.
 
