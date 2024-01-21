@@ -1,13 +1,8 @@
-# B
+# FL-BT IDS
 
-This repository contains BBB-FLIDS, Basic Blockchain-Based Federated Learning Intrusion Detection System.
-
-For detailed information about this project, please see [the report](report/main.pdf).
-
+This repository contains a basic Intrusion Detection System using Federated Learning and Blockchain.
 
 # Setup
-
-You may want to see "Dummy Blockchain Platform" heading before following all instructions here.
 
 ## Virtual Env
 
@@ -18,7 +13,7 @@ First install virtualenv:
 $ pip install virtualenv
 ```
 
-Note that you might need elevated privileges:
+Note that we might need elevated privileges:
 ```sh
 $ sudo pip install virtualenv
 ```
@@ -31,14 +26,13 @@ $ virtualenv -p python3 .venv
 # This allows you to avoid re-installing large libraries, e.g., pytorch
 $ virtualenv -p python3 --system-site-packages .venv
 ```
-It's recommended that you go with the latter option if you already have pytorch installed system-wide.
 
 
 Activate your new virtual environment:
 ```sh
 $ source .venv/bin/activate
 ```
-Note that you will need to run this command each time you restart the terminal.
+Note that we will need to run this command each time you restart the terminal.
 
 ## Install Dependencies
 
@@ -47,17 +41,13 @@ Install the required dependencies from `requirements.txt`:
 $ pip install -r requirements.txt
 ```
 
-After that, you need to run `install_solc.py` file to install the Solidity compiler:
-```sh
-$ python install_solc.py
-```
 
 ### Dummy Blockchain Platform
 
-Thanks to `DummyPlatform` module, you can run this project without blockchain.
+Using `DummyPlatform` module, we can run this project without blockchain.
 This is useful if:
-- You don't want to install blockchain dependencies.
-- Or you want to run the federated learning part only for better run-time performance.
+- we don't want to install blockchain dependencies.
+- Or we want to run the federated learning part only for better run-time performance.
 
 Instead of installing all dependencies, install `numpy`, `pytorch`, `sklearn`, `pandas`, and `tqdm` (optional) only.
 These are included in `fl-requirements.txt`:
@@ -107,14 +97,5 @@ Thus, you need to install it manually:
 $ pip install matplotlib
 ```
 
-## Test Scripts
-
-This will test some functionality in Solidity contract:
-```sh
-$ python TestContract.py
-```
-
-`StressTestContract.py` is intended to measure how much gas is required for a given byte-size of the machine-learning model.
-```sh
-$ python StressTestContract.py
-```
+## Contributing
+Feel free to contribute to the project by opening issues or submitting pull requests. ✨
